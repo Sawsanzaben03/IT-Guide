@@ -93,6 +93,7 @@
 
     .buttons a {
       width: 80%;
+      max-width: 400px;
       text-align: center;
       text-decoration: none;
       color: white;
@@ -123,43 +124,36 @@
       z-index: 2;
     }
 
-    .logo1{
+    .logo1, .logo2, .logo3 {
       position: fixed;
-      display: flex;
-      gap: 12px;
       top: 15px;
+      opacity: 0.8;
+      z-index: 9999;
+    }
+
+    .logo1 {
       right: 15px;
       width: 50px;
-      height: auto;
-      opacity: 0.8;
       border-radius: 35px;
       box-shadow: 0 0 10px rgba(114, 9, 183, 0.6);
-      z-index: 9999;
     }
 
-    .logo2{
-      position: fixed;
-      top: 15px;
-      right: 66px;   
+    .logo2 {
+      right: 66px;
       width: 55px;
-      height: auto;
-      border: none;
-      background: none;
-      box-shadow: none;
-      opacity: 0.8;
-      z-index: 9999;
     }
 
-    .logo3{
-      position: fixed;
-      top: 15px;
+    .logo3 {
       right: 123px;
       width: 45px;
-      height: auto;
-      border: none;
-      background: none;
-      opacity: 0.8;
-      z-index: 9999;
+    }
+
+    @media (max-width: 420px) {
+      .buttons a {
+        width: 95%;
+        padding: 14px 20px;
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
